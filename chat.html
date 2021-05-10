@@ -12,28 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script>
-        $(document).ready(function () {
-            $(".profile .icon_wrap").click(function () {
-                $(this).parent().toggleClass("active");
-                $(".notifications").removeClass("active");
-            });
-
-            $(".notifications .icon_wrap").click(function () {
-                $(this).parent().toggleClass("active");
-                $(".profile").removeClass("active");
-            });
-
-            $(".show_all .link").click(function () {
-                $(".notifications").removeClass("active");
-                $(".popup").show();
-            });
-
-            $(".close").click(function () {
-                $(".popup").hide();
-            });
-        });
-    </script>
+     
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -734,11 +713,18 @@
                 $(".popup").hide();
             });
 
-            $("#listchat").on("click" , function  () {
+           
+             
+            var screenSize = screen.width;
+            if(screenSize < 440){
+                $("#listchat").on("click" , function  () {
                  $('#allchats').addClass('showchat');
                  $("#leftname").addClass("displaynone");
             })
-    
+            }
+             
+             
+
         });
     </script>
 </body>
