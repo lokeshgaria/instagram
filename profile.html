@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Profile </title>
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+    <script>
+        $(document).ready(function () {
+            $(".profile .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".notifications").removeClass("active");
+            });
+
+            $(".notifications .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".profile").removeClass("active");
+            });
+
+            $(".show_all .link").click(function () {
+                $(".notifications").removeClass("active");
+                $(".popup").show();
+            });
+
+            $(".close").click(function () {
+                $(".popup").hide();
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+
+    <!-- ##################### Layout Container ################## -->
+
+    <div class=" ">
+
+
+        <!-- 
+          ################# Top Navigations start ##################
+      -->
+      <div class="navbar p-0 bg-white">
+
+        <div class="col-lg-10    custom   mx-auto   ">
+            <div class="row  d-flex  justify-content-between ">
+
+                <div class="col-lg-3 mx-1     col-4    col-md-3  ">
+                    <div class="navbar_left instaglogoformmobile  ">
+                        <img src="./css/images/logo.png" alt="" class="logo">
+                    </div>
+                </div>
+
+                <div class="col-lg-4     col-md-4  mobileview  ">
+                    <!-- ############### Search start ############## -->
+
+                    <form action="#" class="">
+                        <input type="text" class="searchInput" placeholder="Search..">
+                        <button class="searchButton">
+                            <svg class="searchIcon">
+                                <use xlink:href="./img/sprite.svg#icon-search
+    "></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col-lg-4      col-md-4 col-7   ">
+
+                    <div class="navbar_right ">
+                        <div class="top_nav_icon  ">
+                            <div class="icon_wrap  mx-2 p-0">
+                                <a href="Home.html" class="">
+
+                                    <i class="fas    fa-home top_icon text-dark"></i>
+                                </a>
+
+
+                            </div>
+                            <div class="icon_wrap  p-0  ">
+                                <a href="chat.html" class="mx-2">
+
+                                    <i class="far fa-envelope top_icon"></i>
+
+
+
+
+                                </a>
+                                <span class="user_notification_message">13</span>
+                            </div>
+
+                            <div class="notifications">
+                                <div class="icon_wrap  p-0 mx-2">
+                                    <i class="far fa-bell top_icon"></i>
+                                    <span class="user_notification_bell">83</span>
+                                </div>
+
+                                <div class="notification_dd">
+                                    <ul class="notification_ul">
+                                        <li class="starbucks success">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Success</p>
+                                            </div>
+                                        </li>
+                                        <li class="baskin_robbins failed">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Failed</p>
+                                            </div>
+                                        </li>
+                                        <li class="mcd success">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Success</p>
+                                            </div>
+                                        </li>
+                                        <li class="pizzahut failed">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Failed</p>
+                                            </div>
+                                        </li>
+                                        <li class="kfc success">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Success</p>
+                                            </div>
+                                        </li>
+                                        <li class="show_all">
+                                            <p class="link">Show All Activities</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+                            <div class="icon_wrap  p-0 ">
+                                <a href="cart.html">
+                                    <svg class="cart_icon top_icon" viewBox="0 0 24 24" class="UserMenu_icon__1FuFC">
+                                        <path fill="none" stroke="#1D1E1F" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"
+                                            d="M4 11h16v6a4 4 0 01-4 4H8a4 4 0 01-4-4v-6zm4 2V7a4 4 0 014-4h0a4 4 0 014 4v6">
+                                        </path>
+                                    </svg>
+
+
+                                </a>
+
+                                <span class="user_notification_cart">20</span>
+                            </div>
+
+                            <div class="profile  ">
+                                <div class="icon_wrap">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid rounded-circle"
+                                        style="width:30px">
+                                     
+                                </div>
+
+                                <div class="profile_dd">
+                                    <ul class="profile_ul">
+                                        <li><a class="address" href="profile.html"><span class="picon"><i
+                                                        class="fas fa-user-circle"></i></span>Profile</a></li>
+
+                                        <li><a class="address" href="#"><span class="picon"><i
+                                                        class="fas fa-map-marker"></i></span>Address</a></li>
+                                        <li><a class="settings" href="setting.html"><span class="picon"><i
+                                                        class="fas fa-cog"></i></span>Settings</a></li>
+                                        <li><a class="logout" href="#"><span class="picon"><i
+                                                        class="fas fa-sign-out-alt"></i></span>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="shadow"></div>
+                <div class="inner_popup">
+                    <div class="notification_dd">
+                        <ul class="notification_ul">
+                            <li class="title">
+                                <p>All Notifications</p>
+                                <p class="close"><i class="fas fa-times" aria-hidden="true"></i></p>
+                            </li>
+                            <li class="starbucks success">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Maria Ghafar
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>3 Sec Ago</p>
+                                </div>
+                            </li>
+                            <li class="baskin_robbins failed">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Failed</p>
+                                </div>
+                            </li>
+                            <li class="mcd success">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Success</p>
+                                </div>
+                            </li>
+                            <li class="baskin_robbins failed">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Failed</p>
+                                </div>
+                            </li>
+                            <li class="pizzahut failed">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Failed</p>
+                                </div>
+                            </li>
+                            <li class="kfc success">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Success</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+        <!-- 
+         ################ edit div started ###################### 
+   -->
+
+        <div class="container custom   col-lg-10  custom-file-control  py-4 mt-1">
+            <div class="row">
+                <div class="col-lg-12     mx-auto   ">
+                    <div class="row ">
+                        <div class="col-lg-12 mx-auto   ">
+                            <div class="row  ">
+                                <div class="col-lg-3 col-5    col-md-4   ">
+                                    <div class="img    ">
+                                        <img src="./css/images/profile.jpg" alt="" class="img-fluid profileImg ">
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12     ">
+                                    <div class="leftside">
+
+                                        <div class="username    col-8 col-md-12 ">
+                                            <div class="row  ">
+
+                                                <div class="col-lg-5 custom col-md-5    ">
+                                                    <p style="font-size: 25px ;">Anjela you</p>
+                                                </div>
+
+                                                <div class="col-lg-5 col-md-6   text-center my-2  ">
+                                                    <div class="followbtns ">
+                                                        <button class="w-75 btn border"
+                                                            style="font-size: 13px;">Edit Profile</button>
+                                                        <button class="btn border"><i class="fas fa-cog"
+                                                                style="margin: 4px 1px;"></i></button>
+                                                    </div>
+                                                </div>
+                                                 
+                                            </div>
+
+
+
+                                        </div>
+
+                                        <div class="usercount   d-flex justify-content-between">
+                                            <div class="post">
+                                                <p> <strong>13</strong> post</p>
+                                            </div>
+                                            <div class="followers">
+                                                <p> <strong> 78</strong> followers</p>
+                                            </div>
+                                            <div class="following">
+                                                <p> <strong>19</strong> following</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="userDescription">
+                                            <div class="name">
+                                                <strong> Angela yu </strong>
+                                                <p>Science, Technology & Engineering</p>
+                                                <p>tech news, deals, memes and more</p>
+                                                <a href="">#prgrammer</a>
+
+                                                <p>
+                                                    DM me for any of help in web development 🔥
+                                                    Check out my resources at lazyDev.tech
+                                                    Get latest blog at
+                                                </p>
+                                                <a href="" class="nav-link">
+                                                    zinxed.com
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container       ">
+                <div class="row">
+                    <div class="col-lg-12 col-12   col-md-12">
+                        <div class="row ">
+                            <div class="col-lg-12   col-md-12 mx-auto   ">
+                                <hr />
+                                <div class="row">
+                                    <div class="col-lg-4     col-12 col-md-4 mx-auto my-4">
+                                        <div class="row" style="font-size: 15px;">
+                                            <div class="col-lg-4 col-4 text-center    col-md-4  text-left  ">
+                                                <p class="currentPost pt-4 font13"><i class="far fa-images"></i> Post</p>
+                                            </div>
+                                            <div class="col-lg-4 col-4    col-md-4 text-center  ">
+                                                <p class="pt-4 font13"><i class="far fa-bookmark"></i> Saved</p>
+                                            </div>
+                                            <div class="col-lg-4    col-4 col-md-4  text-center  ">
+                                                <p class="pt-4 font13"> <i class="fas fa-user-tag"></i> Tagged</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-lg-12     col-md-12 mx-auto">
+                                    <div class="row my-4    d-flex align-item-evenly  ">
+    
+                                     
+                                    
+                                        <div class="col-lg-4   col-md-4 col-12 ">
+                                            <img src="./css/images/profile.jpg" alt="" class="img-fluid   my-4">
+                                        </div>
+    
+                                        <div class="col-lg-4 col-md-4  ">
+                                            <img src="./css/images/profile.jpg" alt="" class="img-fluid   my-4">
+                                        </div>
+    
+                                        <div class="col-lg-4 col-md-4  ">
+                                            <img src="./css/images/profile.jpg" alt="" class="img-fluid   my-4">
+                                        </div>
+    
+                                        <div class="col-lg-4  col-md-4 ">
+                                            <img src="./css/images/profile.jpg" alt="" class="img-fluid   my-4">
+                                        </div>
+    
+                                        <div class="col-lg-4  col-md-4 ">
+                                            <img src="./css/images/profile.jpg" alt="" class="img-fluid   my-4">
+                                        </div>
+    
+                                        <div class="col-lg-4  col-md-4 ">
+                                            <img src="./css/images/profile.jpg" alt="" class="img-fluid   my-4">
+                                        </div>
+    
+                                        
+                                        
+                                          
+                                         
+        
+        
+                                    </div>
+                                </div>
+                            
+    
+    
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+      
+
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".profile .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".notifications").removeClass("active");
+            });
+
+            $(".notifications .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".profile").removeClass("active");
+            });
+
+            $(".show_all .link").click(function () {
+                $(".notifications").removeClass("active");
+                $(".popup").show();
+            });
+
+            $(".close").click(function () {
+                $(".popup").hide();
+            });
+        });
+    </script>
+</body>
+
+</html>

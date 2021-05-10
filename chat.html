@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chats </title>
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script>
+        $(document).ready(function () {
+            $(".profile .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".notifications").removeClass("active");
+            });
+
+            $(".notifications .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".profile").removeClass("active");
+            });
+
+            $(".show_all .link").click(function () {
+                $(".notifications").removeClass("active");
+                $(".popup").show();
+            });
+
+            $(".close").click(function () {
+                $(".popup").hide();
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+
+    <!-- ##################### Layout Container ################## -->
+
+
+
+
+    <!-- 
+          ################# Top Navigations start ##################
+      -->
+
+    <div class="navbar p-0 bg-white">
+
+        <div class="col-lg-10    custobown col-md-11   mx-auto   ">
+            <div class="row  d-flex  justify-content-between ">
+
+                <div class="col-lg-3 mx-1  col-md-3    col-4    col-md-3  ">
+                    <div class="navbar_left instaglogoformmobile  ">
+                        <img src="./css/images/logo.png" alt="" class="logo">
+                    </div>
+                </div>
+
+                <div class="col-lg-4     col-md-4  mobileview  ">
+                    <!-- ############### Search start ############## -->
+
+                    <form action="#" class="">
+                        <input type="text" class="searchInput" placeholder="Search..">
+                        <button class="searchButton">
+                            <svg class="searchIcon">
+                                <use xlink:href="./img/sprite.svg#icon-search
+    "></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col-lg-4      col-md-4 col-7   ">
+
+                    <div class="navbar_right ">
+                        <div class="top_nav_icon  ">
+                            <div class="icon_wrap  mx-2 p-0">
+                                <a href="Home.html" class="">
+
+                                    <i class="fas    fa-home top_icon text-dark"></i>
+                                </a>
+
+
+                            </div>
+                            <div class="icon_wrap  p-0  ">
+                                <a href="chat.html" class="mx-2">
+
+                                    <i class="far fa-envelope top_icon"></i>
+
+
+
+
+                                </a>
+                                <span class="user_notification_message">13</span>
+                            </div>
+
+                            <div class="notifications">
+                                <div class="icon_wrap  p-0 mx-2">
+                                    <i class="far fa-bell top_icon"></i>
+                                    <span class="user_notification_bell">83</span>
+                                </div>
+
+                                <div class="notification_dd">
+                                    <ul class="notification_ul">
+                                        <li class="starbucks success">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Success</p>
+                                            </div>
+                                        </li>
+                                        <li class="baskin_robbins failed">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Failed</p>
+                                            </div>
+                                        </li>
+                                        <li class="mcd success">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Success</p>
+                                            </div>
+                                        </li>
+                                        <li class="pizzahut failed">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Failed</p>
+                                            </div>
+                                        </li>
+                                        <li class="kfc success">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Success</p>
+                                            </div>
+                                        </li>
+                                        <li class="show_all">
+                                            <p class="link">Show All Activities</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+                            <div class="icon_wrap  p-0 ">
+                                <a href="cart.html">
+                                    <svg class="cart_icon top_icon" viewBox="0 0 24 24" class="UserMenu_icon__1FuFC">
+                                        <path fill="none" stroke="#1D1E1F" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"
+                                            d="M4 11h16v6a4 4 0 01-4 4H8a4 4 0 01-4-4v-6zm4 2V7a4 4 0 014-4h0a4 4 0 014 4v6">
+                                        </path>
+                                    </svg>
+
+
+                                </a>
+
+                                <span class="user_notification_cart">20</span>
+                            </div>
+
+                            <div class="profile  ">
+                                <div class="icon_wrap">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid rounded-circle"
+                                        style="width:30px">
+
+                                </div>
+
+                                <div class="profile_dd">
+                                    <ul class="profile_ul">
+                                        <li><a class="address" href="profile.html"><span class="picon"><i
+                                                        class="fas fa-user-circle"></i></span>Profile</a></li>
+
+                                        <li><a class="address" href="#"><span class="picon"><i
+                                                        class="fas fa-map-marker"></i></span>Address</a></li>
+                                        <li><a class="settings" href="setting.html"><span class="picon"><i
+                                                        class="fas fa-cog"></i></span>Settings</a></li>
+                                        <li><a class="logout" href="#"><span class="picon"><i
+                                                        class="fas fa-sign-out-alt"></i></span>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="shadow"></div>
+                <div class="inner_popup">
+                    <div class="notification_dd">
+                        <ul class="notification_ul">
+                            <li class="title">
+                                <p>All Notifications</p>
+                                <p class="close"><i class="fas fa-times" aria-hidden="true"></i></p>
+                            </li>
+                            <li class="starbucks success">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Maria Ghafar
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>3 Sec Ago</p>
+                                </div>
+                            </li>
+                            <li class="baskin_robbins failed">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Failed</p>
+                                </div>
+                            </li>
+                            <li class="mcd success">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Success</p>
+                                </div>
+                            </li>
+                            <li class="baskin_robbins failed">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Failed</p>
+                                </div>
+                            </li>
+                            <li class="pizzahut failed">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Failed</p>
+                                </div>
+                            </li>
+                            <li class="kfc success">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Success</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <!-- 
+         ################ edit div started ###################### 
+   -->
+
+
+
+    <!--Post 1 -->
+
+
+    <div class="col-lg-10 custobown col-12 col-md-11 mx-auto bg-white border my-5">
+
+        <div class="row   ">
+
+            <div class="col-lg-4 col-md-4    p-0 mx-auto         ">
+                <!---name-->
+                <div class="  left__name" id="leftname">
+
+                    <div class="row    py-4   ">
+
+                        <div class="col-lg-8 col-md-8 col-8     d-flex justify-content-end">
+                            <h3>Angela_yu</h3><i class=" mx-3 fa-2x mt-2 fas fa-chevron-down"></i>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-3 d-flex   justify-content-end  ">
+                            <i class="far fa-2x mx-4 fa-edit"></i>
+                        </div>
+                    </div>
+                    <!----   current msg type--->
+                    <div class="d-flex">
+                        <div class="col-lg-4 col-md-4 col-4  currentPath d-flex py-2 justify-content-center  ">
+                            <h4 class="text-primary font ">
+                                Primary
+                            </h4>
+                        </div>
+                        <div class="col-lg-4 col-md-4   text-center   py-2  ">
+                            <h4 class="text-primary font ">
+                                General
+                            </h4>
+                        </div>
+                        <div class="col-lg-4   col-md-4 text-center  py-2  ">
+                            <h4 class="text-primary font  ">
+                                Request(1)
+                            </h4>
+                        </div>
+
+                    </div>
+
+                    <ul id="listchat">
+                        <li class="">
+                            <div class="row d-flex align-items-lg-center">
+                                <div class="col-lg-3    col-3 col-md-3 py-2 d-flex   justify-content-lg-end">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img">
+                                </div>
+                                <div class="col-lg-9 col-8   col-md-9">
+                                    <p style="font-size: 18px;
+                                                    margin: 0;">username</p>
+                                    <p class="text-muted" style="    font-size: 11px;
+                                                    margin: 0;
+                                                    padding: 0;">Active 3h ago</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="current  current__chat">
+                            <div class="row d-flex align-items-lg-center">
+                                <div class="col-lg-3    col-3 col-md-3 py-2 d-flex   justify-content-lg-end">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img">
+                                </div>
+                                <div class="col-lg-9 col-8   col-md-9">
+                                    <p style="font-size: 18px;
+                                                    margin: 0;">username</p>
+                                    <p class="text-muted" style="    font-size: 11px;
+                                                    margin: 0;
+                                                    padding: 0;">Active 3h ago</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="row d-flex align-items-lg-center">
+                                <div class="col-lg-3    col-3 col-md-3 py-2 d-flex   justify-content-lg-end">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img">
+                                </div>
+                                <div class="col-lg-9 col-8   col-md-9">
+                                    <p style="font-size: 18px;
+                                                    margin: 0;">username</p>
+                                    <p class="text-muted" style="    font-size: 11px;
+                                                    margin: 0;
+                                                    padding: 0;">Active 3h ago</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="row d-flex align-items-lg-center">
+                                <div class="col-lg-3    col-3 col-md-3 py-2 d-flex   justify-content-lg-end">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img">
+                                </div>
+                                <div class="col-lg-9 col-8   col-md-9">
+                                    <p style="font-size: 18px;
+                                                    margin: 0;">username</p>
+                                    <p class="text-muted" style="    font-size: 11px;
+                                                    margin: 0;
+                                                    padding: 0;">Active 3h ago</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="row d-flex align-items-lg-center">
+                                <div class="col-lg-3    col-3 col-md-3 py-2 d-flex   justify-content-lg-end">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img">
+                                </div>
+                                <div class="col-lg-9 col-8   col-md-9">
+                                    <p style="font-size: 18px;
+                                                    margin: 0;">username</p>
+                                    <p class="text-muted" style="    font-size: 11px;
+                                                    margin: 0;
+                                                    padding: 0;">Active 3h ago</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="row d-flex align-items-lg-center">
+                                <div class="col-lg-3    col-3 col-md-3 py-2 d-flex   justify-content-lg-end">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img">
+                                </div>
+                                <div class="col-lg-9 col-8   col-md-9">
+                                    <p style="font-size: 18px;
+                                                    margin: 0;">username</p>
+                                    <p class="text-muted" style="    font-size: 11px;
+                                                    margin: 0;
+                                                    padding: 0;">Active 3h ago</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="row d-flex align-items-lg-center">
+                                <div class="col-lg-3    col-3 col-md-3 py-2 d-flex   justify-content-lg-end">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img">
+                                </div>
+                                <div class="col-lg-9 col-8   col-md-9">
+                                    <p style="font-size: 18px;
+                                                    margin: 0;">username</p>
+                                    <p class="text-muted" style="    font-size: 11px;
+                                                    margin: 0;
+                                                    padding: 0;">Active 3h ago</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                   
+
+
+                </div>
+
+
+
+
+                <!--chhats-->  </div>
+            <div class="col-lg-8 col-md-8 col-12 border  all_chat   p-0" style="max-height : 100vh" id="allchats">
+
+                <div class="row    d-flex  p-2 align-items-lg-center">
+                    <div class="col-lg-2   col-2 col-md-2  d-flex   justify-content-lg-evenly  ">
+                        <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img" style="width:34px">
+                    </div>
+                    <div class="col-lg-9 col-8 col-md-9     ">
+                        <p style="font-size: 18px;
+                                                                          margin: 0;">username</p>
+                        <p class="text-muted" style="    font-size: 11px;
+                                                                                          margin: 0;
+                                                                   padding: 0;">Active 3h ago</p>
+
+                    </div>
+
+                    <div class="col-lg-1 col-md-1 col-1  ">
+                        <i class="fas  infoIcon fa-info "></i>
+                    </div>
+
+                </div>
+
+                <!--chat starts-->
+                <div class="conversations   ">
+
+                    <!--sender-->
+                    <div class="row boederdiv  d-flex my-2 p-2 align-items-lg-center">
+                        <div class="col-lg-12 col-md-12 col-md-12 col-12    d-flex     " style="width: 63%">
+
+                            <ul class="  w-100">
+                                <li class="w-100 
+                                 d-flex ">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img" style="    max-width: 35px;
+                                    max-height: 38px;
+                                    margin: 7px 0;">
+                                    <div class=" my-2  mx-3">
+                                        <p class="  border senderMsg p-3"> Lorem ipsum dolor sit amet. </p>
+                                    </div>
+                                </li>
+
+                                <li class="  100  text-right 
+                                 d-flex justify-content-end w-100">
+                                    <!--userchat msges-->
+                                       
+                                        <p class=" w-50 user__msg 
+                                         text-right  "> Lorem ipsum dolor s  soluta harum delectus quas quae?
+                                        </p>
+                                    
+                                </li>
+                                <li class="w-100 
+                                 d-flex ">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img" style="    max-width: 35px;
+                                    max-height: 38px;
+                                    margin: 7px 0;">
+                                    <div class=" my-2  mx-3">
+                                        <p class="  border senderMsg p-3"> Lorem ipsum dolor sit amet. </p>
+                                    </div>
+                                </li>
+                                <li class="  100  text-right 
+                                 d-flex justify-content-end w-100">
+                                    <!--userchat msges-->
+                                       
+                                        <p class=" w-50 user__msg 
+                                         text-right  "> Lorem ipsum dolor s  soluta harum delectus quas quae?
+                                        </p>
+                                    
+                                </li>
+                                <li class="w-100 
+                                 d-flex ">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img" style="    max-width: 35px;
+                                    max-height: 38px;
+                                    margin: 7px 0;">
+                                    <div class=" my-2  mx-3">
+                                        <p class="  border senderMsg p-3"> Lorem ipsum dolor sit amet. </p>
+                                    </div>
+                                </li>
+                                <li class="  100  text-right 
+                                 d-flex justify-content-end w-100">
+                                    <!--userchat msges-->
+                                       
+                                        <p class=" w-50 user__msg 
+                                         text-right  "> Lorem ipsum dolor s  soluta harum delectus quas quae?
+                                        </p>
+                                    
+                                </li>  <li class="w-100 
+                                 d-flex ">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img" style="    max-width: 35px;
+                                    max-height: 38px;
+                                    margin: 7px 0;">
+                                    <div class=" my-2  mx-3">
+                                        <p class="  border senderMsg p-3"> Lorem ipsum dolor sit amet. </p>
+                                    </div>
+                                </li>
+                                <li class="  100  text-right 
+                                 d-flex justify-content-end w-100">
+                                    <!--userchat msges-->
+                                       
+                                        <p class=" w-50 user__msg 
+                                         text-right  "> Lorem ipsum dolor s  soluta harum delectus quas quae?
+                                        </p>
+                                    
+                                </li>
+                                <li class="w-100 
+                                 d-flex ">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid chat__img" style="    max-width: 35px;
+                                    max-height: 38px;
+                                    margin: 7px 0;">
+                                    <div class=" my-2  mx-3">
+                                        <p class="  border senderMsg p-3"> Lorem ipsum dolor sit amet. </p>
+                                    </div>
+                                </li>
+                                <li class="  100  text-right 
+                                 d-flex justify-content-end w-100">
+                                    <!--userchat msges-->
+                                       
+                                        <p class=" w-50 user__msg 
+                                         text-right  "> Lorem ipsum dolor s  soluta harum delectus quas quae?
+                                        </p>
+                                    
+                                </li>
+                               
+                            </ul>
+
+                        </div>
+
+
+
+                        <div class="container">
+                            <div class="row mx-auto my-2    ">
+                                <div class="startchat    chatboard  ">
+                                    <div class="row p-3     mx-auto ">
+                                        <div class="icon   col-2   col-lg-1 col-md-1">
+                                            <svg aria-label="Emoji" class="_8-yf5 " fill="#262626" height="24"
+                                                viewBox="0 0 48 48" width="24">
+                                                <path
+                                                    d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z">
+                                                </path>
+                                                <path
+                                                    d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="enterMsg col-7   col-lg-8 col-md-8 ">
+                                            <input type="text" class="input__chat" placeholder="Message...">
+                                        </div>
+        
+                                        <div class="  col-lg-3 col-md-3 col-3   d-flex justify-content-around ">
+                                            <svg aria-label="Add Photo or Video" class="_8-yf5 " fill="#262626" height="24"
+                                                viewBox="0 0 48 48" width="24">
+                                                <path
+                                                    d="M38.5 0h-29C4.3 0 0 4.3 0 9.5v29C0 43.7 4.3 48 9.5 48h29c5.2 0 9.5-4.3 9.5-9.5v-29C48 4.3 43.7 0 38.5 0zM45 38.5c0 3.6-2.9 6.5-6.5 6.5h-29c-3.3 0-6-2.5-6.4-5.6l8.3-8.3c.1-.1.3-.2.4-.2.1 0 .2 0 .4.2l6.3 6.3c1.4 1.4 3.6 1.4 5 0L35.9 25c.2-.2.6-.2.8 0l8.3 8.3v5.2zm0-9.4l-6.2-6.2c-1.3-1.3-3.7-1.3-5 0L21.3 35.3c-.1.1-.3.2-.4.2-.1 0-.2 0-.4-.2L14.2 29c-1.3-1.3-3.7-1.3-5 0L3 35.2V9.5C3 5.9 5.9 3 9.5 3h29C42.1 3 45 5.9 45 9.5v19.6zM11.8 8.2c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z">
+                                                </path>
+                                            </svg>
+                                            <svg aria-label="Like" class="_8-yf5 " fill="#262626" height="24"
+                                                viewBox="0 0 48 48" width="24">
+                                                <path
+                                                    d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!--inputfield-->
+           
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".profile .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".notifications").removeClass("active");
+            });
+
+            $(".notifications .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".profile").removeClass("active");
+            });
+
+            $(".show_all .link").click(function () {
+                $(".notifications").removeClass("active");
+                $(".popup").show();
+            });
+
+            $(".close").click(function () {
+                $(".popup").hide();
+            });
+
+            $("#listchat").on("click" , function  () {
+                 $('#allchats').addClass('showchat');
+                 $("#leftname").addClass("displaynone");
+            })
+    
+        });
+    </script>
+</body>
+
+</html>

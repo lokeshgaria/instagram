@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script>
+        $(document).ready(function () {
+            $(".profile .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".notifications").removeClass("active");
+            });
+
+            $(".notifications .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".profile").removeClass("active");
+            });
+
+            $(".show_all .link").click(function () {
+                $(".notifications").removeClass("active");
+                $(".popup").show();
+            });
+
+            $(".close").click(function () {
+                $(".popup").hide();
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+
+    <!-- ##################### Layout Container ################## -->
+
+
+
+
+    <!-- 
+          ################# Top Navigations start ##################
+      -->
+
+      <div class="navbar p-0 bg-white">
+
+        <div class="col-lg-10    custom   mx-auto   ">
+            <div class="row  d-flex  justify-content-between ">
+
+                <div class="col-lg-3 mx-1     col-4    col-md-3  ">
+                    <div class="navbar_left instaglogoformmobile  ">
+                        <img src="./css/images/logo.png" alt="" class="logo">
+                    </div>
+                </div>
+
+                <div class="col-lg-4     col-md-4  mobileview  ">
+                    <!-- ############### Search start ############## -->
+
+                    <form action="#" class="">
+                        <input type="text" class="searchInput" placeholder="Search..">
+                        <button class="searchButton">
+                            <svg class="searchIcon">
+                                <use xlink:href="./img/sprite.svg#icon-search
+    "></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col-lg-4      col-md-4 col-7   ">
+
+                    <div class="navbar_right ">
+                        <div class="top_nav_icon  ">
+                            <div class="icon_wrap  mx-2 p-0">
+                                <a href="Home.html" class="">
+
+                                    <i class="fas    fa-home top_icon text-dark"></i>
+                                </a>
+
+
+                            </div>
+                            <div class="icon_wrap  p-0  ">
+                                <a href="chat.html" class="mx-2">
+
+                                    <i class="far fa-envelope top_icon"></i>
+
+
+
+
+                                </a>
+                                <span class="user_notification_message">13</span>
+                            </div>
+
+                            <div class="notifications">
+                                <div class="icon_wrap  p-0 mx-2">
+                                    <i class="far fa-bell top_icon"></i>
+                                    <span class="user_notification_bell">83</span>
+                                </div>
+
+                                <div class="notification_dd">
+                                    <ul class="notification_ul">
+                                        <li class="starbucks success">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Success</p>
+                                            </div>
+                                        </li>
+                                        <li class="baskin_robbins failed">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Failed</p>
+                                            </div>
+                                        </li>
+                                        <li class="mcd success">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Success</p>
+                                            </div>
+                                        </li>
+                                        <li class="pizzahut failed">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Failed</p>
+                                            </div>
+                                        </li>
+                                        <li class="kfc success">
+                                            <div class="notify_icon">
+                                                <span class="icon"></span>
+                                            </div>
+                                            <div class="notify_data">
+                                                <div class="title">
+                                                    Lorem, ipsum dolor.
+                                                </div>
+                                                <div class="sub_title">
+                                                    Lorem ipsum dolor sit amet consectetur.
+                                                </div>
+                                            </div>
+                                            <div class="notify_status">
+                                                <p>Success</p>
+                                            </div>
+                                        </li>
+                                        <li class="show_all">
+                                            <p class="link">Show All Activities</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+                            <div class="icon_wrap  p-0 ">
+                                <a href="cart.html">
+                                    <svg class="cart_icon top_icon" viewBox="0 0 24 24" class="UserMenu_icon__1FuFC">
+                                        <path fill="none" stroke="#1D1E1F" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1.5"
+                                            d="M4 11h16v6a4 4 0 01-4 4H8a4 4 0 01-4-4v-6zm4 2V7a4 4 0 014-4h0a4 4 0 014 4v6">
+                                        </path>
+                                    </svg>
+
+
+                                </a>
+
+                                <span class="user_notification_cart">20</span>
+                            </div>
+
+                            <div class="profile  ">
+                                <div class="icon_wrap">
+                                    <img src="./css/images/user-3.jpg" alt="" class="img-fluid rounded-circle"
+                                        style="width:30px">
+                                     
+                                </div>
+
+                                <div class="profile_dd">
+                                    <ul class="profile_ul">
+                                        <li><a class="address" href="profile.html"><span class="picon"><i
+                                                        class="fas fa-user-circle"></i></span>Profile</a></li>
+
+                                        <li><a class="address" href="#"><span class="picon"><i
+                                                        class="fas fa-map-marker"></i></span>Address</a></li>
+                                        <li><a class="settings" href="setting.html"><span class="picon"><i
+                                                        class="fas fa-cog"></i></span>Settings</a></li>
+                                        <li><a class="logout" href="#"><span class="picon"><i
+                                                        class="fas fa-sign-out-alt"></i></span>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="shadow"></div>
+                <div class="inner_popup">
+                    <div class="notification_dd">
+                        <ul class="notification_ul">
+                            <li class="title">
+                                <p>All Notifications</p>
+                                <p class="close"><i class="fas fa-times" aria-hidden="true"></i></p>
+                            </li>
+                            <li class="starbucks success">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Maria Ghafar
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>3 Sec Ago</p>
+                                </div>
+                            </li>
+                            <li class="baskin_robbins failed">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Failed</p>
+                                </div>
+                            </li>
+                            <li class="mcd success">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Success</p>
+                                </div>
+                            </li>
+                            <li class="baskin_robbins failed">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Failed</p>
+                                </div>
+                            </li>
+                            <li class="pizzahut failed">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Failed</p>
+                                </div>
+                            </li>
+                            <li class="kfc success">
+                                <div class="notify_icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="notify_data">
+                                    <div class="title">
+                                        Lorem, ipsum dolor.
+                                    </div>
+                                    <div class="sub_title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </div>
+                                <div class="notify_status">
+                                    <p>Success</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+    </div>
+
+
+    <!-- 
+         ################ edit div started ###################### 
+   -->
+
+    <div class=" col-lg-10 col-md-12  my-5 custom mx-auto    ">
+        <div class="row     ">
+            <div class="col-lg-3  col-md-4 mobileview  pl-0   text-center ">
+                <ul class="nav flex-column border py-5 bg-white">
+                    <li class="nav-item navList">
+                        <a class=" current text-dark navAanchor" href="/accounts/edit/" tabindex="0">Edit
+                            Profile</a>
+                    </li>
+                    <li class="nav-item navList">
+                        <a class="  text-dark navAanchor" href="/accounts/password/change/" tabindex="0">Change
+                            Password</a>
+                    </li>
+                    <li class="nav-item navList">
+                        <a class="  text-dark navAanchor" href="/accounts/manage_access/" tabindex="0">Apps and
+                            Websites</a>
+                    </li>
+
+                    <li class="nav-item navList">
+                        <a class="  text-dark navAanchor" href="/push/web/settings/" tabindex="0">Push
+                            Notifications</a>
+                    </li>
+                    <li class="nav-item navList">
+                        <a class="  text-dark navAanchor" href="/accounts/contact_history/" tabindex="0">Manage
+                            Contacts</a>
+                    </li>
+                    <li class="nav-item navList">
+                        <a class="  text-dark navAanchor" href="/accounts/privacy_and_security/" tabindex="0">Privacy
+                            and
+                            Security</a>
+                    </li>
+                    <li class="nav-item navList">
+                        <a class="  text-dark navAanchor" href="/session/login_activity/" tabindex="0">Login
+                            Activity</a>
+                    </li>
+                    <li class="nav-item navList">
+                        <a class="  text-dark navAanchor" href="/emails/emails_sent/" tabindex="0">Emails from
+                            Instagram</a>
+                    </li>
+
+                    <div class=" my-3 ">
+                        <div class="switch" href=" " tabindex="0">Switch to
+                            Vendor Account</a></div>
+                    </div>
+
+
+                </ul>
+
+            </div>
+            <div class="col-lg-9 col-md-8   border  bg-white">
+                <div class="name">
+                    <div class="row">
+
+
+                        <div class="col-10 mx-auto my-4    justify-content-evenly  ">
+                            <div class="row">
+                                <div class="col-lg-3 col-3  col-md-3   text-center">
+                                    <img src="css/images/user-3.jpg" class="   img-fluid rounded-circle" width="40"
+                                        height="40" alt="">
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-9  ">
+                                    <div class="ada5V">
+                                        <strong class="  font"> Angella_Yu</strong> <br>
+                                        <label style="cursor: pointer; font-weight: 600;"
+                                            class="text-primary  file-input-wrapper font" for="avatar">Change Profile
+                                            Photo</label>
+
+                                        <input style="visibility: hidden;" type="file" id="avatar" name="avatar"
+                                            accept="image/png, image/jpeg">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-10 mx-auto my-4    justify-content-evenly  ">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-3 pb-2 text-center text-center">
+                                    <label for="pepName" class="inputlabel">Name</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9   ">
+                                    <div class="ada5V">
+                                        <div class="">
+                                            <input aria-required="false" id="pepName" placeholder="Name" type="text"
+                                                class="form-control" value="Angella Yu">
+                                            <div class=" ">
+                                                <div class ">
+                                                    <div class=" placeholder">Help people discover your account by
+                                                    using the
+                                                    name you're known by: either your full name, nickname, or
+                                                    business
+                                                    name.</div>
+                                            </div>
+                                            <div class="placeholder ">You can only change your name twice within
+                                                14
+                                                days.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-4  justify-content-evenly  ">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-3 pb-2  text-center">
+                                <label for="pepName" class="inputlabel">Username</label>
+                            </div>
+                            <div class="col-lg-9  col-md-9">
+                                <div class="ada5V">
+                                    <div class="">
+                                        <input aria-required="false" id="pepName" placeholder="Name" type="text"
+                                            class="form-control" value="Angella_Yu">
+                                        <div class=" ">
+                                            <div class="">
+                                                <div class="placeholder">n most cases, you'll be able to change
+                                                    your
+                                                    username back to lokesh_garia for another 14 days. <a href="">Learn
+                                                        More</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-4  justify-content-evenly  ">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-3 pb-2 col-3 pb-2  text-center">
+                                <label for="pepName" class="inputlabel">Website</label>
+                            </div>
+                            <div class="col-lg-9  col-md-9">
+                                <div class="ada5V">
+                                    <div class="">
+                                        <input aria-required="false" id="pepName" placeholder="Name" type="text"
+                                            class="form-control" value="website name">
+                                        <div class=" " style="width: 100%; max-width: 355px;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="col-10 mx-auto my-4  justify-content-evenly  ">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-3 pb-2  text-center">
+                                <label for="pepName" class="inputlabel">Bio</label>
+                            </div>
+                            <div class="col-lg-9  col-md-9">
+                                <div class="ada5V">
+                                    <div class="">
+                                        <textarea class="form-control" name="" id=""> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas excepturi nihil quas possimus accusantium inventore provident, sit impedit labore asperiores ut repellendus!
+    
+                                            </textarea>
+                                        <div class=" " style="width: 100%; max-width: 355px;">
+                                            <div class="">
+                                                <div class="placeholder">
+
+                                                    <Strong class="text-muted">Personal Information</Strong>
+                                                    Provide your personal information, even if the account is
+                                                    used for a
+                                                    business, a pet or something else. This won't be a part of
+                                                    your
+                                                    public profile.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-4  justify-content-evenly  ">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-3 pb-2  text-center">
+                                <label for="pepName" class="inputlabel">Email</label>
+                            </div>
+                            <div class="col-lg-9  col-md-9">
+                                <div class="ada5V">
+                                    <div class="">
+                                        <input aria-required="false" id="pepName" placeholder="Name" type="email"
+                                            class="form-control" value=" abc@gmail.com">
+                                        <div class=" " style="width: 100%; max-width: 355px;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-4   justify-content-evenly  ">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 mobiletext pb-2  text-center">
+                                <label for="pepName" class="inputlabel">Phone Number</label>
+                            </div>
+                            <div class="col-lg-9  col-md-9">
+                                <div class="ada5V">
+                                    <div class="">
+                                        <input aria-required="false" id="pepName" placeholder="Name" type="text"
+                                            class="form-control" value=" 9845544842">
+                                        <div class=" " style="width: 100%; max-width: 355px;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-4  justify-content-evenly  ">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-3 pb-2  text-center">
+                                <label for="pepName" class="inputlabel">Gender</label>
+                            </div>
+                            <div class="col-lg-9  col-md-9">
+                                <div class="ada5V">
+                                    <div class="">
+                                        <input aria-required="false" id="pepName" placeholder="Name" type="text"
+                                            class="form-control" value="Female">
+                                        <div class=" " style="width: 100%; max-width: 355px;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-10 mx-auto my-4 d-flex align-items-center justify-content-evenly  ">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-12 pb-2 mobiletext text-center">
+                                <label for="pepName" class="inputlabel">Similar Account Suggestion</label>
+                            </div>
+                            <div class="col-lg-7 col-md-7">
+                                <div class="">
+                                    <div class=" d-flex align-items-center justify-content-evenly">
+                                        <input type="checkbox" name="" id="" checked>
+                                        <div class="placeholder mx-2">
+
+                                            Include your account when recommending similar accounts people might
+                                            want to
+                                            follow.[?]
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-10   mx-auto my-4 d-flex align-items-center justify-content-between  ">
+                        <input type="submit" class="btn btn-primary  font" value="Submit">
+                        <div class="">
+                            <a href="" class="font   mobilefont"> <span>Temporarily disable my account</span> </a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+            </main>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".profile .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".notifications").removeClass("active");
+            });
+
+            $(".notifications .icon_wrap").click(function () {
+                $(this).parent().toggleClass("active");
+                $(".profile").removeClass("active");
+            });
+
+            $(".show_all .link").click(function () {
+                $(".notifications").removeClass("active");
+                $(".popup").show();
+            });
+
+            $(".close").click(function () {
+                $(".popup").hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
