@@ -867,14 +867,7 @@ li {
 
 }
 
-.storyImg {
-  border-radius: 50%;
-  border: 1px solid #e91e63;
-  width: 64px;
-  height: 60px;
-
-   
-} 
+ 
 .fa-ellipsis-hPost {
   position: relative;
   color: white;
@@ -899,12 +892,15 @@ li {
   position: relative;
     top: 0;
 
-}
-  .storyImg {
-    border-radius: 50%;
-    border: 1px solid #e91e63;
-    
-    height: 50px;
+} 
+    .storyImg {
+      border-radius: 50%;
+      border: 1px solid #e91e63;
+      height: 49px;
+      width: 50px;
+      padding: 13px;
+      margin: -1px;
+  
   }
   .people {
     display: flex;
@@ -999,13 +995,11 @@ li {
     justify-content: flex-end;
     justify-content: space-around;
   }
-  .chat__img{
-    
-      height: 38px;
-      width: 33px;
-      margin: 0;
-  
-  }
+  .chat__img {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+}
 
   .img{
     text-align: center;
@@ -1125,7 +1119,8 @@ li {
 
   .fa-ellipsis-hPost {
     
-      margin-left: auto;
+    
+      margin-left: 30px;
       position: absolute;
       width: 87%;
   
