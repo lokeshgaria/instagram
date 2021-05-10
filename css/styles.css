@@ -650,15 +650,14 @@ li {
   padding: 0;
   margin: 0;
 }
-.shopdiv button{
+.shopdiv button {
   border-radius: 0px;
   border-right: 1px solid #d0d6d6;
   border-top: none;
   border-left: none;
   border-bottom: none;
-  background-color:  rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   font-size: 13px;
-
 }
 .conversations {
   /* max-height: 52vh; */
@@ -685,12 +684,12 @@ li {
   background-color: rgb(230, 219, 219);
   font-size: 14px;
   margin: 0;
-  
+
   margin: 0;
   padding: 9px 8px;
   border-radius: 25px;
   float: right;
-   
+
   text-align: right;
   float: right;
 }
@@ -742,7 +741,7 @@ li {
   overflow: hidden;
 }
 
-#listchat li:hover{
+#listchat li:hover {
   background-color: rgb(212, 188, 188);
 }
 .suggestions ul {
@@ -750,10 +749,10 @@ li {
   overflow: hidden;
 }
 
-.displaynone{
+.displaynone {
   display: none !important;
 }
-.showchat{
+.showchat {
   display: block !important;
 }
 @media (min-width: 1500px) {
@@ -797,7 +796,7 @@ li {
 }
 
 /*small laptops*/
-@media (max-width : 1024px){
+@media (max-width: 1024px) {
   .short {
     background: #443b3b;
     color: white;
@@ -811,8 +810,8 @@ li {
     /* width: 62px; */
     left: 2px;
     font-weight: 200;
-}
   }
+}
 
 /**tablets **/
 @media (max-width: 780px) {
@@ -821,8 +820,8 @@ li {
     overflow: hidden;
   }
 
-  .font{
-    font-size : 12px;
+  .font {
+    font-size: 12px;
   }
 
   .short {
@@ -838,7 +837,7 @@ li {
     /* width: 62px; */
     left: 2px;
     font-weight: 200;
-}
+  }
   .mobiletextalign {
     text-align: center;
   }
@@ -873,13 +872,23 @@ li {
   .people {
     width: 152%;
   }
+  .top_nav_icon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    justify-content: space-around;
+  }
 
-  .customCart{
+  .mt-5,
+  .my-5 {
+    margin-top: 0 !important;
+  }
+  .customCart {
     height: 100vh;
     display: flex;
-    
   }
-  .box{
+  .box {
     max-height: 20vh;
     margin-top: auto;
   }
@@ -890,28 +899,31 @@ li {
   .all_chat {
     max-height: 100vh;
     display: none;
-}
-.container {
-  
-  padding-right: 0; 
-   padding-left: 0; 
- 
-}
-.col-lg-10 ,.col-lg-12 , .col-md-4 ,.col-lg-4 ,.col-md-4 ,.col-8{
-  padding-right: 0;
+  }
+  .container {
+    padding-right: 0;
     padding-left: 0;
-}
-.username{
-  position: relative;
-  top: -86px;
-  left: 37%;
-}
+  }
+  .col-lg-10,
+  .col-lg-12,
+  .col-md-4,
+  .col-lg-4,
+  .col-md-4,
+  .col-8,
+  .col-lg-7 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .username {
+    position: relative;
+    top: -86px;
+    left: 37%;
+  }
 
   .row {
-    
-     margin-right: 0px; 
-     margin-left: 0px; 
-}
+    margin-right: 0px;
+    margin-left: 0px;
+  }
   .short {
     background: #443b3b;
     color: white;
@@ -927,8 +939,8 @@ li {
     font-weight: 200;
   }
   .profile {
-    margin-left:  0;
-}
+    margin-left: 0;
+  }
 
   .mobileview {
     display: none;
@@ -949,52 +961,49 @@ li {
   .instaglogoformmobile {
     text-align: center;
   }
-  .shopdiv button{
+  .shopdiv button {
     border-radius: 0px;
     border-right: 1px solid #d0d6d6;
     border-top: none;
     border-left: none;
     border-bottom: none;
-    background-color:  rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     font-size: 10px;
-
   }
-  .font{
-    font-size :12px
+  .font {
+    font-size: 12px;
   }
-  .imglogo{
+  .imglogo {
     padding: 0;
   }
   .name .mx-4 {
     margin-left: 0 !important;
-}
+  }
   .shopdiv p {
     padding: 0;
-    border: 1px solid ;
+    border: 1px solid;
   }
-  .productdes{
-
+  .productdes {
     font-size: 10px;
-        font-weight: bold;
-    }
-    .fontSmall{
-      font-size: 10px;
-       
-    }
+    font-weight: bold;
+  }
+  .fontSmall {
+    font-size: 10px;
+  }
 
-    .fa-ellipsis-hPost {
-      
-      margin-left: -2rem;
-      position: absolute;
-    }    
+  .fa-ellipsis-hPost {
+    margin-left: auto;  
+   position: absolute;
+  
+   width: 100%;
+ }
 
-    .homecontainer{
-      
-        padding-right: 0px;
-        padding-left: 0px;       margin-right: 0;
-        margin-left: 0;
-    
-    }
+  .homecontainer {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 3000px) and (min-width: 1192px) {
@@ -1004,11 +1013,10 @@ li {
     left: 50%;
     transform: translate(50%, -123%);
   }
-  
 }
 
-@media   (max-width  : 1200px){
-  .col-4{
+@media (max-width: 1200px) {
+  .col-4 {
     padding-left: 0;
     padding-right: 0;
   }
